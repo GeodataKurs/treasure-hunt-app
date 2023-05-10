@@ -1,4 +1,4 @@
-# Treasure Hunt App
+# Treasure Hunt App 1
 
 This is the Github repo for the Treasure Hunt Application, which is a location based quiz application (for the browser) built w/ JavaScript, React, and the ArcGIS API for JavaScript.
 
