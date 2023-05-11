@@ -144,7 +144,7 @@ export const getItemInfo = async(itemID) =>
     ).shift();
 
     return {
-            title: (surveyFormItem && surveyFormItem.title) || "TestApp", 
+            title: (surveyFormItem && surveyFormItem.title) || "Your title here", 
             description: (surveyFormItem && surveyFormItem.description) || "You're subtitle here too (once you add your Treasure Hunt to the registry).",
             serviceURL: featureServiceItem.url+"/0"
           };
