@@ -44,7 +44,7 @@ export const CongratsScreen = ({
                                 
                 <div className="flex-grow-1 d-flex flex-column overflow-hidden p-2 m-0 m-sm-2 me-sm-1"
                     style={{height: "100%"}}>
-                    <h1 className="display-5 fw-bold text-center">You made it!</h1>
+                    <h1 className="display-5 fw-bold text-center">Du klarte det!</h1>
                     <p className="h5 text-center" style={{fontWeight: 400}}>You navigated the <strong>{title}</strong> Treasure Hunt!</p>
                     <h2 className="align-self-center display-1 fw-bold">{score}%</h2>
                     <ul className="list-group list-group-flush overflow-auto">
