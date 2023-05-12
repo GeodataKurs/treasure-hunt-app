@@ -324,7 +324,7 @@ function App() {
                       <p dangerouslySetInnerHTML={{__html: selectedQuestion.hint}}></p>
                       <button className="btn btn-sm btn-outline-primary"
                               disabled={selectedQuestion.solved || selectedQuestion.skipped}
-                              onClick={doSkip}>Stumped? Reveal the answer.</button>                    
+                              onClick={doSkip}>Vanskelig? Avslør svaret.</button>                    
                     </div>
                     }
                     <div className="alert alert-info"
