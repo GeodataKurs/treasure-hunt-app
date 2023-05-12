@@ -254,7 +254,7 @@ function App() {
                 style={{border: "none"}}>
               <div className="card-header d-flex justify-content-between ps-4 pe-4" 
                   style={{border: "none", background: "none"}}>
-                <h3 className="h5">QUESTION {findItemIndex(selectedQuestion.objectid)+1} OF {_records.current.length}</h3>
+                <h3 className="h5">SPØRSMÅL {findItemIndex(selectedQuestion.objectid)+1} OF {_records.current.length}</h3>
                 {!selectedQuestion.skipped && selectedQuestion.solved && <span>Solved</span>}
                 <h3 className="h5 fw-bolder">POENGSUM: {parseInt(calculateScore())}%</h3>
               </div>
