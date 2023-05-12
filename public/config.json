@@ -1,7 +1,7 @@
 ﻿{
     "title": "Bunadsquiz",
     "description": "Hvor god kontroll har du på bunader rundt omkring i Norges land. Test dine bunadskunnskaper her...",
-    "serviceURL": "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/survey123_06c53142eb21471999e11794c9e595ff_stakeholder/FeatureServer/0",
+    "serviceURL": "https://services2.arcgis.com/jyJt3V4LLzpQgZ8z/arcgis/rest/services/Bunadspunkter/FeatureServer/0",//"https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/survey123_06c53142eb21471999e11794c9e595ff_stakeholder/FeatureServer/0",
     "path": "heritage-sites",
     "introImage": "./bunader.jpg",
     "initCenter": [-40, 29],
