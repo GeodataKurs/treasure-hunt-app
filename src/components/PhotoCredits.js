@@ -24,7 +24,6 @@ export const PhotoCredits = ({
     }) => {
     return(
         <div id={id} className={className} style={style}>
-        Photo credit:
         {
         sourceReferenceURL && 
         <a href={sourceReferenceURL} 
@@ -36,7 +35,6 @@ export const PhotoCredits = ({
         !sourceReferenceURL && 
         <span className="ms-1 me-1">{attribution}</span>
         }
-        /
         {
         licenseReferenceURL &&
         <a href={licenseReferenceURL} 
