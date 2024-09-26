@@ -194,10 +194,10 @@ function App() {
       <>
 
         <header className="border-bottom border-bottom-1 d-flex justify-content-between align-items-center p-3">
-          <h1 className="fs-5 ms-2">Treasure Hunt: {config.title}</h1>
+          <h1 className="fs-5 ms-2">17 Mai: {config.title}</h1>
           <button className="btn btn-sm fw-bold btn-outline-secondary btn-light me-2" 
                 style={{borderColor: "navy"}}
-                onClick={()=>showInstructions()}>Instructions</button>
+                onClick={()=>showInstructions()}>Instruksjoner</button>
         </header>
 
         <section id="main" 
@@ -254,9 +254,9 @@ function App() {
                 style={{border: "none"}}>
               <div className="card-header d-flex justify-content-between ps-4 pe-4" 
                   style={{border: "none", background: "none"}}>
-                <h3 className="h5">QUESTION {findItemIndex(selectedQuestion.objectid)+1} OF {_records.current.length}</h3>
+                <h3 className="h5">SPØRSMÅL {findItemIndex(selectedQuestion.objectid)+1} OF {_records.current.length}</h3>
                 {!selectedQuestion.skipped && selectedQuestion.solved && <span>Solved</span>}
-                <h3 className="h5 fw-bolder">SCORE: {parseInt(calculateScore())}%</h3>
+                <h3 className="h5 fw-bolder">POENGSUM: {parseInt(calculateScore())}%</h3>
               </div>
               <div id="question-image-1" 
                   className="w-100 align-self-center p-4 pt-1 mb-3"
@@ -299,16 +299,16 @@ function App() {
                       selectedQuestion.solved && 
                       <button className="btn btn-sm btn-primary ms-3 w-100" 
                               style={{maxWidth: "120px", float: "right"}}
-                              onClick={doNext}>Next Question</button>
+                              onClick={doNext}>Neste spørsmål</button>
                       }                      
                       {
                       findItemIndex(selectedQuestion.objectid) === _records.current.length - 1 && 
                       _records.current.filter((question)=>question.solved).length === _records.current.length &&
                       <button className="btn btn-sm btn-primary ms-3 w-100" 
                               style={{maxWidth: "120px", float: "right"}}
-                              onClick={() => showCongratsScreen()}>See your results!</button>
+                              onClick={() => showCongratsScreen()}>Se dine resultater!</button>
                       }
-                      <h4 className="h6 fw-bolder">ANSWER</h4>
+                      <h4 className="h6 fw-bolder">SVAR</h4>
                       <p dangerouslySetInnerHTML={{__html: selectedQuestion.exclamation}}></p>
                     </div>
                     }
@@ -324,7 +324,7 @@ function App() {
                       <p dangerouslySetInnerHTML={{__html: selectedQuestion.hint}}></p>
                       <button className="btn btn-sm btn-outline-primary"
                               disabled={selectedQuestion.solved || selectedQuestion.skipped}
-                              onClick={doSkip}>Stumped? Reveal the answer.</button>                    
+                              onClick={doSkip}>Vanskelig? Avslør svaret.</button>                    
                     </div>
                     }
                     <div className="alert alert-info"
@@ -333,12 +333,12 @@ function App() {
                         {opacity:"0.8"} : 
                         {animation: "swoopy .5s linear"}
                       }>
-                        <h4 className="h6 fw-bolder">QUESTION</h4>
+                        <h4 className="h6 fw-bolder">SPØRSMÅL</h4>
                         <p dangerouslySetInnerHTML={{__html: selectedQuestion.prompt}}></p>
                         <button target="blank" 
                                   className="btn btn-sm btn-outline-primary"
                                   disabled={selectedQuestion.hintActivated || selectedQuestion.solved}
-                                  onClick={()=>markHintActivated(selectedQuestion.objectid)}>Need a hint?</button>
+                                  onClick={()=>markHintActivated(selectedQuestion.objectid)}>Trenger du et hint?</button>
                     </div>
                     <div id="question-image-2" 
                           className="align-self-center flex-column align-items-center mb-2" 
